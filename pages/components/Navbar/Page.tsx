@@ -1,15 +1,8 @@
 "use client"
 import Image from "next/image"
-import { useState } from "react";
 
 const Navbar = () => {
-  const menuItems = [
-    { label: 'Share', angle: 0 },
-    { label: 'Edit', angle: 72 },
-    { label: 'Delete', angle: 144 },
-    { label: 'Save', angle: 216 },
-    { label: 'Print', angle: 288 }
-  ];
+  
 
   const handleEmailClick = () => {
     window.location.href = "mailto:ndifin77@gmail.com";

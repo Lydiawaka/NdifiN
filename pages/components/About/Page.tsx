@@ -11,7 +11,7 @@ const About = () => {
             <h1 data-aos= "fade-up" className="text-5xl font-bold text-teal-500">we are makers.</h1>
             
             <p data-aos= "fade-up" className="text-sm md:text-xl max-w-xl mx-auto">
-                At Ndinfin, we are visionaries, makers, and problem solvers. Our passionate team of developers and designers crafts tailored digital solutions that exceed expectations. Whether you're a startup or an established business, we combine creativity and expertise to bring your vision to life. At Ndinfin, we don't just create. we make it happen.
+                At Ndinfin, we are visionaries, makers, and problem solvers. Our passionate team of developers and designers crafts tailored digital solutions that exceed expectations. Whether you&apos;re a startup or an established business, we combine creativity and expertise to bring your vision to life. At Ndinfin, we don&apos;t just create. we make it happen.
             </p>
             </div>
 

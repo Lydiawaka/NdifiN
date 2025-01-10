@@ -1,4 +1,4 @@
-import { FaArrowLeft, FaArrowRight, FaStar, FaSearch, FaPalette, FaCode, FaMoneyCheckAlt } from "react-icons/fa";
+import { FaSearch, FaPalette, FaCode, FaMoneyCheckAlt } from "react-icons/fa";
 import Hero from "./components/Hero/Page";
 import Navbar from "./components/Navbar/Page";
 import About from "./components/About/Page";
@@ -7,8 +7,9 @@ import Footer from "./components/Footer/Page";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Image from "next/image";
 
-const index = () => {
+const Index = () => {
 
   useEffect(() => {
     AOS.init({
@@ -27,37 +28,10 @@ const index = () => {
     { icon: FaMoneyCheckAlt, title: 'Financial Consultancy', description: 'Our consultants gives strategic investment guidance that takes a personalized approach to building and preserving wealth.', aosDelay: "800" }
   ];
 
-  const steps = [
-    { number: 1, title: 'Contact us', description: 'Reach out to discuss your needs' },
-    { number: 2, title: 'Consult', description: 'In-depth analysis of your requirements' },
-    { number: 3, title: 'Place order', description: 'Choose your desired solutions' },
-    { number: 4, title: 'Payment', description: 'Secure and flexible payment options' }
-  ];
 
   const handleEmailClick = () => {
     window.location.href = "mailto:ndifin77@gmail.com";
   };
-
-  const testimonials = [
-    {
-      name: 'Johanna Doe',
-      image: '/images/meeting.jpg',
-      text: 'Amazing service and great communication throughout the project',
-      rating: 5
-    },
-    {
-      name: 'John Doe',
-      image: '/images/meeting.jpg',
-      text: 'Professional team that delivered beyond our expectations',
-      rating: 4
-    },
-    {
-      name: 'Jonathan Doe',
-      image: '/images/meeting.jpg',
-      text: 'Excellent results and outstanding support',
-      rating: 5
-    }
-  ];
 
   return (
     <div className="bg-black">
@@ -80,9 +54,11 @@ const index = () => {
             </button>
           </div>
           <div data-aos="fade-up" data-aos-delay="800" className="relative">
-            <img
+            <Image
               src="/images/laptop.jpg"
               alt="Agency preview"
+              width={500}
+              height={300}
               className="rounded-2xl"
             />
           </div>
@@ -136,4 +112,4 @@ const index = () => {
     </div>
   )
 }
-export default index
+export default Index
