@@ -11,7 +11,18 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customBlue: "#00CEC8",
       },
+      animation: {
+        'star-move': 'starAnimation 10s infinite linear',
+      },
+      keyframes: {
+        starAnimation: {
+          '0%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '1000px 1000px' },
+        },
+      },
+      
     },
   },
   plugins: [],

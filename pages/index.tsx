@@ -1,114 +1,139 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { FaArrowLeft, FaArrowRight, FaStar, FaSearch, FaPalette, FaCode, FaMoneyCheckAlt } from "react-icons/fa";
+import Hero from "./components/Hero/Page";
+import Navbar from "./components/Navbar/Page";
+import About from "./components/About/Page";
+import Explore from "./components/Explore/Page";
+import Footer from "./components/Footer/Page";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const index = () => {
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
 
-export default function Home() {
+  const services = [
+    { icon: FaSearch, title: 'UI/UX Design', description: 'Where imagination meets functionality: crafting next-generation interfaces that push creative boundaries while maintaining intuitive usability.', aosDelay: "200" },
+    { icon: FaPalette, title: 'SEO/SEM', description: 'Optimize your online presence and reach more customers effectively', aosDelay: "400" },
+    { icon: FaCode, title: 'Web Development', description: 'Building the digital foundation of your success through expert web development.', aosDelay: "600" },
+    { icon: FaMoneyCheckAlt, title: 'Financial Consultancy', description: 'Our consultants gives strategic investment guidance that takes a personalized approach to building and preserving wealth.', aosDelay: "800" }
+  ];
+
+  const steps = [
+    { number: 1, title: 'Contact us', description: 'Reach out to discuss your needs' },
+    { number: 2, title: 'Consult', description: 'In-depth analysis of your requirements' },
+    { number: 3, title: 'Place order', description: 'Choose your desired solutions' },
+    { number: 4, title: 'Payment', description: 'Secure and flexible payment options' }
+  ];
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:ndifin77@gmail.com";
+  };
+
+  const testimonials = [
+    {
+      name: 'Johanna Doe',
+      image: '/images/meeting.jpg',
+      text: 'Amazing service and great communication throughout the project',
+      rating: 5
+    },
+    {
+      name: 'John Doe',
+      image: '/images/meeting.jpg',
+      text: 'Professional team that delivered beyond our expectations',
+      rating: 4
+    },
+    {
+      name: 'Jonathan Doe',
+      image: '/images/meeting.jpg',
+      text: 'Excellent results and outstanding support',
+      rating: 5
+    }
+  ];
+
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-black">
+      {/* Navigation */}
+      <Navbar />
+      {/* Hero Section */}
+      <Hero />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      {/* About Agency Section */}
+      <section className="py-20 px-8">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2  data-aos="fade-up"
+            className="text-3xl font-bold mb-6 text-white">NdifiN</h2>
+            <p data-aos="fade-up" className="text-gray-200 mb-8">
+              We are passionate about turning ideas into impactful online experiences. At NdifiN, we specialize in creating and developing websites that combine innovative design, seamless functionality, and user-focused experiences.
+            </p>
+            <button onClick={handleEmailClick} className="bg-blue-600 text-white px-6 py-2 rounded-lg">
+              Connect
+            </button>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="800" className="relative">
+            <img
+              src="/images/laptop.jpg"
+              alt="Agency preview"
+              className="rounded-2xl"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+      
+      {/* About section */}
+      <About/>
+       {/* Services Section */}
+       <section className="py-20 px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 data-aos= "fade-up" className="text-3xl font-bold text-center mb-12 text-gray-200">
+            We Provide the Best Services
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={service.aosDelay}  
+                className={`p-6 rounded-xl hover:shadow-lg transition-all
+                  ${index === 2 ? 'bg-customBlue text-white' : 'bg-gray-50'}`}
+              >
+                <div className="w-12 h-12 mb-4">
+                  {/* Icon placeholder */}
+                  <div className="w-full h-full rounded-full">
+                    <service.icon className="text-xl hover:rotate-90" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <p className={index === 2 ? 'text-blue-100' : 'text-gray-600'}>
+                  {service.description}
+                </p>
+                
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Explore Section */}
+      <Explore />
+
+
+
+      {/* Footer */}
+      <Footer />
+      
+
+
     </div>
-  );
+  )
 }
+export default index
