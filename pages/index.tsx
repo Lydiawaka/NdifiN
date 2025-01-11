@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Image from "next/image";
+import Projects from "./components/Projects/Page";
 
 const Index = () => {
 
@@ -41,25 +42,25 @@ const Index = () => {
       <Hero />
 
       {/* About Agency Section */}
-      <section className="py-20 px-8">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
+      <section className="py-20 px-10 w-full">
+        <div className="container max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 items-center">
+          <div className="lg:col-span-2 ">
             <h2  data-aos="fade-up"
             className="text-3xl font-bold mb-6 text-white">NdifiN</h2>
-            <p data-aos="fade-up" className="text-gray-200 mb-8">
+            <p data-aos="fade-up" className="text-gray-200  max-w-xl mb-8">
               We are passionate about turning ideas into impactful online experiences. At NdifiN, we specialize in creating and developing websites that combine innovative design, seamless functionality, and user-focused experiences.
             </p>
-            <button onClick={handleEmailClick} className="bg-blue-600 text-white px-6 py-2 rounded-lg">
+            <button onClick={handleEmailClick} className="bg-blue-600  text-white px-6 py-2 rounded-lg">
               Connect
             </button>
           </div>
-          <div data-aos="fade-up" data-aos-delay="800" className="relative">
+          <div data-aos="fade-up" data-aos-delay="800" className="lg:col-span-2 relative w-full">
             <Image
               src="/images/laptop.jpg"
               alt="Agency preview"
               width={500}
               height={300}
-              className="rounded-2xl"
+              className="rounded-2xl w-[500px] h-auto object-cover"
             />
           </div>
         </div>
@@ -67,6 +68,8 @@ const Index = () => {
       
       {/* About section */}
       <About/>
+      {/* project section */}
+      <Projects />
        {/* Services Section */}
        <section className="py-20 px-8">
         <div className="max-w-7xl mx-auto">
