@@ -63,7 +63,7 @@ const Projects = () => {
           <div className="relative w-full h-full bg-white rounded-lg overflow-hidden">
 
             {/* Content Area */}
-            <div className="relative h-[calc(100%-2rem)] overflow-hidden">
+            <div className="relative w-full h-[calc(100%-2rem)] overflow-hidden">
               
                 <Slider {...setting}>
                 {projects.map(( project ) => (
@@ -71,17 +71,16 @@ const Projects = () => {
                     key={project.id}
                     className="min-w-full h-full p-4"
                   >
-                    <div className="bg-gray-50 h-full rounded-lg p-4">
+                    <div className="bg-gray-50 h-full rounded-lg p-2 sm:p-4">
                       <Image
                         src={project.image} 
                         alt={project.view}
-                        height={600}
-                        width={500}
-                        className="w-full h-full object-cover rounded-lg mb-4"
+                        height={300}
+                        width={600}
+                        className="w-full aspect-video object-cover rounded-lg mb-2 sm:mb-2"
                       />
-                      
-                      <div className="flex gap-2 flex-wrap">
-                        <a href={project.code} className="text-s font-semibold mb-2 ">{project.view}</a>
+                      <div className="flex flex-wrap gap-2">
+                        <a href={project.code} className="text-sm font-semibold hover:text-gray-600 transition-colors ">{project.view}</a>
                       </div>
                     </div>
                   </div>

@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Projects from "./components/Projects/Page";
 
+
 const Index = () => {
 
   useEffect(() => {
@@ -36,13 +37,14 @@ const Index = () => {
 
   return (
     <div className="bg-black">
+      
       {/* Navigation */}
       <Navbar />
       {/* Hero Section */}
       <Hero />
 
       {/* About Agency Section */}
-      <section className="py-20 px-10 w-full">
+      <section className="py-10 px-10 w-full">
         <div className="container max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 items-center">
           <div className="lg:col-span-2 ">
             <h2  data-aos="fade-up"

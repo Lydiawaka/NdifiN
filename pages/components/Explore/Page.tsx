@@ -14,7 +14,7 @@ const Explore = () => {
       ];
   return (
     <div>
-        <div className="relative hidden md:flex space-x-4 justify-center">
+        <div className="relative hidden md:flex space-x-3 justify-center items-center">
             <button 
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center justify-center text-white h-24 w-24 bg-teal-500 rounded-full hover:bg-customBlue cursor-pointer">

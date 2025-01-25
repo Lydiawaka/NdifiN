@@ -1,4 +1,5 @@
-import { FaLinkedin, FaTiktok, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaTiktok, FaDiscord, FaCopyright } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div>
@@ -52,6 +53,10 @@ const Footer = () => {
             <li className="hover:text-gray-300 transition-colors">Careers</li>
           </ul>
         </div>
+      </div>
+      <div className="flex justify-center items-center mt-4">
+        <FaCopyright />
+        <h1 className="text-gray-400">2025</h1>
       </div>
     </footer>
     </div>
