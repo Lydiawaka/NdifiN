@@ -40,7 +40,7 @@ const Projects = () => {
     {
       id: 4,
       view: "Ecommerce",
-      image: "/images/ecom.jpg",
+      image: "/images/wak.jpg",
       code: "https://www.wakawears.com/"
     },
     {
@@ -48,7 +48,14 @@ const Projects = () => {
       view: "Store",
       image: "/images/furniture.jpg",
       code: "https://furniture-rust-nine.vercel.app/"
+    },
+    {
+      id: 6,
+      view: "Restaurant",
+      image: "/images/restaurant.jpg",
+      code: "https://restaurant-lydias-projects-05146ea0.vercel.app/"
     }
+
   ];
 
  
