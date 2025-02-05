@@ -31,7 +31,7 @@ const Hero = () => {
               user-centric design.
             </p>
   
-            <button  onClick={handleEmailClick} data-aos= "fade-up" className="bg-gray-200 hover:bg-blue-600 text-black font-semibold py-2 px-3 rounded-full transition-all duration-300">
+            <button  onClick={handleEmailClick} data-aos= "fade-up" className="bg-gray-200 cursor-pointer hover:bg-blue-600 text-black font-semibold py-2 px-3 rounded-full transition-all duration-300">
               GET IN TOUCH
             </button>
           </div>

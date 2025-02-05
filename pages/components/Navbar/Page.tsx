@@ -38,10 +38,9 @@ const Navbar = () => {
         space-y-2 
         md:space-y-0 
         md:space-x-4
-        absolute 
+        relative 
         md:relative 
-        top-12 
-        md:top-0 
+        z-50 
         right-0 
         bg-black 
         md:bg-transparent 
