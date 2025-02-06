@@ -24,7 +24,7 @@ const Explore = () => {
             {menuItems.map(({ icon, angle, id }) => (
             <button
               key={id}
-              className={`absolute top-1/2 bottom-1/2 right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-12 w-12 bg-white text-blue-500 rounded-full transition-all duration-300 ${
+              className={`absolute top-1/2 bottom-1/2 right-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-12 w-12 bg-white text-teal-500 rounded-full transition-all duration-300 ${
                 isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
               }`}
               style={{

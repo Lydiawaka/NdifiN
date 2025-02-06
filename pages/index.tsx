@@ -52,7 +52,7 @@ const Index = () => {
             <p data-aos="fade-up" className="text-gray-200  max-w-xl mb-8">
               We are passionate about turning ideas into impactful online experiences. At NdifiN, we specialize in creating and developing websites that combine innovative design, seamless functionality, and user-focused experiences.
             </p>
-            <button onClick={handleEmailClick} className="bg-blue-600  text-white px-6 py-2 rounded-lg">
+            <button onClick={handleEmailClick} className="bg-teal-500 text-white font-semibold px-6 py-2 rounded-lg hover:text-black hover:bg-slate-50 ">
               Connect
             </button>
           </div>

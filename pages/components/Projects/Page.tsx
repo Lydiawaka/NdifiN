@@ -61,7 +61,7 @@ const Projects = () => {
  
 
   return (
-    <div className="w-full min-h-[50vh] bg-black flex items-center justify-center p-8">
+    <div className="w-full min-h-auto bg-black flex items-center justify-center p-8">
       {/* Laptop Container */}
       <div className="w-full max-w-xl aspect-[16/10] relative">
         {/* Laptop Body */}

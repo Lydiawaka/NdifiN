@@ -4,7 +4,7 @@ const Hero = () => {
   };
     return (
       <div className="h-[60vh] sm:h-1/2 sm:mb-0">
-        <div className="h-[80vh] bg-black bg-opacity-95 relative overflow-hidden">
+        <div className="h-auto bg-black bg-opacity-95 relative overflow-hidden">
         {/* Stars background effect */}
         <div className=" inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] bg-opacity-70 bg-[length:100px_150px] animate-star-move"></div>
