@@ -29,7 +29,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-2 text-gray-400">
             <li className="hover:text-gray-300 transition-colors flex items-center">
-              <FaWhatsapp className="bg-teal-600 text-white rounded-lg" />+254 778 136 430</li>
+              <FaWhatsapp className="bg-teal-600 text-white rounded-lg" />+254 746 056 315</li>
             <li className="hover:text-gray-300 transition-colors flex items-center">
               <FaMailBulk className="bg-teal-600 text-white rounded-md" />
               ndifin77@gmail.com</li>
