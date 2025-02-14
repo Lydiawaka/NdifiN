@@ -25,13 +25,12 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div data-aos= "fade-up" className="text-center sm:text-left">
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-          <ul className="space-y-2 text-gray-400">
-            <li className="hover:text-gray-300 transition-colors flex items-center">
-              <FaWhatsapp className="bg-teal-600 text-white rounded-lg" />+254 746 056 315</li>
-            <li className="hover:text-gray-300 transition-colors flex items-center">
-              <FaMailBulk className="bg-teal-600 text-white rounded-md" />
+        <div data-aos= "fade-up" className=" text-center sm:text-left">
+          <h3 className="text-lg font-semibold mb-4 ">Contact Us</h3>
+          <ul className="space-y-2 text-gray-400 text-center sm:text-left ">
+            <li className="hover:text-gray-300 transition-colors ">
+              +254 746 056 315</li>
+            <li className="hover:text-gray-300 transition-colors ">
               ndifin77@gmail.com</li>
           </ul>
         </div>

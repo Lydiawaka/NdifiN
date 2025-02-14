@@ -33,8 +33,8 @@ const Projects = () => {
     },
     {
       id: 3,
-      view: "Portifolio",
-      image: "/images/portifolio.jpg",
+      view: "mining",
+      image: "/images/metlp.JPG",
       code: "https://lydiawaka.github.io/Portfolio/"
     },
     {
