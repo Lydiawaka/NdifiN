@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { useState } from "react";
 import { MdMenu } from "react-icons/md";
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -51,7 +52,7 @@ const Navbar = () => {
         md:shadow-none
       `}>
          <div className="flex space-x-4">
-            <button className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Blog</button>
+            <Link href="https://medium.com/@ndifin77" className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Blog</Link>
             <button onClick={handleEmailClick} className="flex bg-slate-50 rounded-full py-1 px-3 hover:bg-teal-500">Contact Us</button>
           </div>
       </div>

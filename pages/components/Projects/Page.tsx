@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Link from 'next/link';
 
 const Projects = () => {
 
@@ -96,10 +97,13 @@ const Projects = () => {
               </div>
             </div>
             {/* Laptop Base */}
-           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-2/3 h-2 bg-gray-700 rounded-b-xl"></div>
+           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-2/3 h-2 bg-gray-700 rounded-b-xl"></div>         
           </div>
+          
         </div>
-
+        
+        <Link href="" className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white ">View More</Link>
+       
         
       </div>
 
