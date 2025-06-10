@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import Link from 'next/link';
+
 
 const Projects = () => {
 
@@ -102,7 +102,7 @@ const Projects = () => {
           
         </div>
         
-        <Link href="" className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white ">View More</Link>
+        
        
         
       </div>
