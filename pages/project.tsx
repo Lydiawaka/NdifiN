@@ -3,6 +3,7 @@ import Link from "next/link"
 import Footer from "./components/Footer/Page"
 import Navbar from "./components/Navbar/Page"
 import AnimatedCounters from "./project/AnimatedCounters";
+import { ExternalLink, Github } from "lucide-react";
 
 
 export default function Home() {
@@ -12,89 +13,140 @@ export default function Home() {
     {
       id: 1,
       title: 'Precious Metal Informative Website',
-      description: 'A personal portfolio showcasing my skills and projects.',
       tech: ['React', 'Next.js', 'Tailwind'],
-      image: '/images/metlp.JPG', 
+      description: 'A personal portfolio showcasing my skills and projects.',
+      image: '/images/metlp.JPG',
+      liveUrl: 'https://example.com/precious-metal',
+      codeUrl: 'https://github.com/username/precious-metal'
     },
     {
       id: 2,
       title: 'E-commerce Store',
-      description: 'An online store with full shopping cart functionality.',
       tech: ['Next.js', 'Django', 'Stripe'],
+      description: 'An online store with full shopping cart functionality.',
       image: '/images/wak.jpg',
+      liveUrl: 'https://example.com/ecommerce',
+      codeUrl: 'https://github.com/username/ecommerce-store'
     },
     {
       id: 3,
       title: 'Ecommerce Admin Dashboard',
-      description: 'A full-stack blog with admin dashboard and markdown support.',
       tech: ['Next.js', 'Node.js', 'MySQL'],
-      image: '/images/admin.jpg'
+      description: 'A full-stack blog with admin dashboard and markdown support.',
+      image: '/images/admin.jpg',
+      liveUrl: 'https://example.com/admin-dashboard',
+      codeUrl: 'https://github.com/username/admin-dashboard'
     },
     {
       id: 4,
       title: 'Solar Platform',
-      description: 'A full-stack blog with admin dashboard and markdown support.',
       tech: ['React', 'Node.js', 'MongoDB'],
+      description: 'A full-stack blog with admin dashboard and markdown support.',
       image: '/images/solarfirm.jpg',
+      liveUrl: 'https://example.com/solar-platform',
+      codeUrl: 'https://github.com/username/solar-platform'
     },
-    
-    
-    
+    {
+      id: 5,
+      title: 'Precious Metal Informative Website',
+      tech: ['React', 'Next.js', 'Tailwind'],
+      description: 'A personal portfolio showcasing my skills and projects.',
+      image: '/images/masgas.PNG',
+      liveUrl: 'https://example.com/precious-metal-2',
+      codeUrl: 'https://github.com/username/precious-metal-2'
+    },
+    {
+      id: 6,
+      title: 'Precious Metal Informative Website',
+      tech: ['React', 'Next.js', 'Tailwind'],
+      description: 'A personal portfolio showcasing my skills and projects.',
+      image: '/images/masgas-admin.PNG',
+      liveUrl: 'https://example.com/precious-metal-admin',
+      codeUrl: 'https://github.com/username/precious-metal-admin'
+    },
   ];
+
   const personalProjects = [
     {
-      id: 2,
+      id: 1,
       title: 'Crypto Tracker',
-      description: 'A real-time cryptocurrency tracking dashboard displaying price charts, market trends, and coin data using CoinGecko API.',
       tech: ['Next.js', 'Docusaurus', 'Shadcn ui'],
+      description: 'A real-time cryptocurrency tracking dashboard displaying price charts, market trends, and coin data using CoinGecko API.',
       image: '/images/crypto.jpg',
-      link: 'https://example.com/crypto-tracker'
+      liveUrl: 'https://crypto-tracker-gilt-one.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/crypto-tracker'
     },    
     {
       id: 2,
       title: 'Blog Platform',
-      description: 'A full-stack blog with admin dashboard and markdown support.',
       tech: ['React', 'Node.js', 'MongoDB'],
+      description: 'A full-stack blog with admin dashboard and markdown support.',
       image: '/images/blog.jpg',
-      link: 'https://example.com/blog'
+      liveUrl: 'https://essie-blogs.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/Essie-Blogs'
     },
     {
       id: 3,
       title: 'Recipe Finder',
-      description: 'Search and filter recipes by ingredients, dietary restrictions, and more.',
       tech: ['Next.js', 'Tailwind CSS', 'Spoonacular API'],
+      description: 'Search and filter recipes by ingredients, dietary restrictions, and more.',
       image: '/images/recipe.jpg',
-      link: 'https://example.com/recipes'
+      liveUrl: 'https://example.com/recipes',
+      codeUrl: 'https://github.com/username/recipe-finder'
     },
     {
       id: 4,
       title: 'Portfolio Website',
-      description: 'A personal portfolio showcasing my skills and projects.',
       tech: ['React', 'Next.js', 'Tailwind'],
-      image: '/images/portifolio.jpg', 
-      link: ''
+      description: 'A personal portfolio showcasing my skills and projects.',
+      image: '/images/portifolio.jpg',
+      liveUrl: 'https://example.com/portfolio',
+      codeUrl: 'https://github.com/username/portfolio'
     },
     {
       id: 5,
       title: 'Our stories',
-      description: 'A full-stack platform where users can sign up and write and save they stories and poems.',
       tech: ['React', 'Node.js', 'MongoDB'],
+      description: 'A full-stack platform where users can sign up and write and save they stories and poems.',
       image: '/images/poem.jpg',
+      liveUrl: 'https://poems-alpha.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/poems'
     },
     {
       id: 6,
-      title: 'Blog Platform',
-      description: 'A full-stack blog with admin dashboard and markdown support.',
+      title: 'Furniture Store',
       tech: ['React', 'Node.js', 'MongoDB'],
+      description: 'A full-stack blog with admin dashboard and markdown support.',
       image: '/images/furniture.jpg',
+      liveUrl: 'https://furniture-rust-nine.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/Furniture'
     },
     {
       id: 7,
       title: 'Task Management App',
-      description: 'A Trello-inspired task management application with drag-and-drop functionality.',
       tech: ['Next.js', 'Shadcn ui', 'Mysql'],
+      description: 'A Trello-inspired task management application with drag-and-drop functionality.',
       image: '/images/task.jpg',
-      link: 'https://example.com/task-app'
+      liveUrl: 'https://task-manager-mu-lovat.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/Task-Manager'
+    },
+    {
+      id: 8,
+      title: 'Restaurant Website',
+      tech: ['React', 'Node.js', 'MongoDB'],
+      description: 'A full-stack restaurant website with an online booking system for reservations.',
+      image: '/images/restaurant.jpg',
+      liveUrl: 'https://restaurant-dusky-six.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/restaurant'
+      },
+    {
+      id: 9,
+      title: 'Udemy Clone',
+      tech: ['Typescript','Javascript', 'Shadcn ui'],
+      description: 'A Trello-inspired task management application with drag-and-drop functionality.',
+      image: '/images/udemy.jpg',
+      liveUrl: 'https://udemy-clone-eight-olive.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/UdemyClone'
     }
   ];
   
@@ -137,17 +189,37 @@ export default function Home() {
                 <div className="h-48 bg-gray-200 relative">
                   <Image
                     src={project.image}
-                    alt={`Project ${project}`}
+                    alt={`Project ${project.title}`}
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">{project.tech}</span>
-                    
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech, index) => (
+                      <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">{tech}</span>
+                    ))}
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                  <p className="text-gray-600 mb-6">{project.description}</p>
+                  <div className="flex gap-3">
+                    <Link 
+                      href={project.liveUrl} 
+                      target="_blank"
+                      className="flex-1 bg-gray-200 hover:ring-2 hover:ring-teal-600 text-gray-900 text-center py-2 px-4 rounded-md transition-colors font-medium flex items-center justify-center gap-2"
+                    >
+                      <ExternalLink size={16} />
+                      Live Preview
+                    </Link>
+                    <Link 
+                      href={project.codeUrl} 
+                      target="_blank"
+                      className="flex-1 bg-gray-200 hover:ring-2 hover:ring-gray-900 text-gray-900 text-center py-2 px-4 rounded-md transition-colors font-medium flex items-center justify-center gap-2"
+                    >
+                      <Github size={16} />
+                      View Code
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -172,16 +244,29 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech, index) => (
                         <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">{tech}</span>
                       ))}
                     </div>
-                    <div className="mt-4 pt-4 border-t border-gray-100">
-                      <Link href={project.link || "#"} className="text-teal-500 hover:text-teal-700 font-medium">
-                        View Project →
+                    <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                    <p className="text-gray-600 mb-6">{project.description}</p>
+                    <div className="flex gap-3">
+                      <Link 
+                        href={project.liveUrl} 
+                        target="_blank"
+                        className="flex-1 bg-gray-200 hover:ring-2 hover:ring-teal-400 text-gray-900 text-center py-2 px-4 rounded-md transition-colors font-medium flex items-center justify-center gap-2"
+                      >
+                        <ExternalLink size={16} />
+                        Live Preview
+                      </Link>
+                      <Link 
+                        href={project.codeUrl} 
+                        target="_blank"
+                        className="flex-1 bg-gray-200 hover:ring-2 hover:ring-gray-900 text-gray-900 text-center py-2 px-4 rounded-md transition-colors font-medium flex items-center justify-center gap-2"
+                      >
+                        <Github size={16} />
+                        View Code
                       </Link>
                     </div>
                   </div>

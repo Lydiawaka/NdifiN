@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { FaLinkedin, FaGithub, FaTiktok, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTiktok } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import Link from "next/link";
-
+import { SiFiverr } from "react-icons/si";
 
 const Explore = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ const Explore = () => {
         { id: 2, icon: <FaGithub />, angle: 72, link: "https://www.linkedin.com/in/lydia-nduati-b76b32279/"},
         { id:3, icon: <FaTiktok />, angle: 144, link: "https://www.tiktok.com/@ndifin1?_t=ZM-8tgtLa8WbFG&_r=1"},
         { id:4, icon: <CiMail />, angle: 216, link: "https://www.linkedin.com/in/lydia-nduati-b76b32279/"},
-        { id:5, icon: <FaInstagram />, angle: 288, link: "GATXUWWYDFFHN4SK64F6H3X6UVUCRGMR6BXJ4JAPT2MMG5QI5VRQLQNE" }
+        { id:5, icon: <SiFiverr />, angle: 288, link: "https://www.fiverr.com/users/lydia_nduati/" }
       ];
   return (
     <div>
