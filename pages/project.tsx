@@ -115,8 +115,8 @@ export default function Home() {
     {
       id: 6,
       title: 'Furniture Store',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      description: 'A full-stack blog with admin dashboard and markdown support.',
+      tech: ['React', 'Vite', 'Node.js', 'MongoDB'],
+      description: 'A modern furniture storefront built with Vite + React.',
       image: '/images/furniture.jpg',
       liveUrl: 'https://furniture-rust-nine.vercel.app/',
       codeUrl: 'https://github.com/Lydiawaka/Furniture'
@@ -143,7 +143,7 @@ export default function Home() {
       id: 9,
       title: 'Udemy Clone',
       tech: ['Typescript','Javascript', 'Shadcn ui'],
-      description: 'A Trello-inspired task management application with drag-and-drop functionality.',
+      description: 'An online learning platform that enables users to create, manage, and enroll in courses.',
       image: '/images/udemy.jpg',
       liveUrl: 'https://udemy-clone-eight-olive.vercel.app/',
       codeUrl: 'https://github.com/Lydiawaka/UdemyClone'

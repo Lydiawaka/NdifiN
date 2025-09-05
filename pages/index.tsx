@@ -39,10 +39,7 @@ const Index = () => {
     <>
     <Head>
        <title>NdifiN | Software Development & Consultancy</title>
-        <meta
-          name="google-site-verification"
-          content="googlea5cfac247083116d.html"
-        />
+       <meta name="google-site-verification" content="aZ2EgSdJ42Mq5hcC1VE9wH1iSiJoKmlAG_wyIgpo2J4" />
       </Head>
       
     <div className="bg-black">
