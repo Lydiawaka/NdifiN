@@ -16,7 +16,7 @@ export default function Home() {
       tech: ['React', 'Next.js', 'Tailwind'],
       description: 'A personal portfolio showcasing my skills and projects.',
       image: '/images/metlp.JPG',
-      liveUrl: 'https://example.com/precious-metal',
+      liveUrl: 'https://precious-metal',
       codeUrl: 'https://github.com/username/precious-metal'
     },
     {
@@ -41,28 +41,28 @@ export default function Home() {
       id: 4,
       title: 'Solar Platform',
       tech: ['React', 'Node.js', 'MongoDB'],
-      description: 'A full-stack blog with admin dashboard and markdown support.',
+      description: 'An informative website for a solar consultancy company.',
       image: '/images/solarfirm.jpg',
-      liveUrl: 'https://example.com/solar-platform',
+      liveUrl: 'https://jimaliventuresconsulting.co.ke/',
       codeUrl: 'https://github.com/username/solar-platform'
     },
     {
       id: 5,
-      title: 'Precious Metal Informative Website',
+      title: 'Masgas Enterprice Website',
       tech: ['React', 'Next.js', 'Tailwind'],
-      description: 'A personal portfolio showcasing my skills and projects.',
+      description: 'Ecommerce website that allow clients to order via Whatsapp.',
       image: '/images/masgas.PNG',
-      liveUrl: 'https://example.com/precious-metal-2',
-      codeUrl: 'https://github.com/username/precious-metal-2'
+      liveUrl: 'https://masgas-enterprice.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/masgas-enterprice'
     },
     {
       id: 6,
-      title: 'Precious Metal Informative Website',
-      tech: ['React', 'Next.js', 'Tailwind'],
-      description: 'A personal portfolio showcasing my skills and projects.',
+      title: 'Masgas Dashboard Website',
+      tech: ['React', 'Next.js', 'Tailwind', 'PostgreSQL', ],
+      description: 'Allows the admins to upload the products to main website.',
       image: '/images/masgas-admin.PNG',
-      liveUrl: 'https://example.com/precious-metal-admin',
-      codeUrl: 'https://github.com/username/precious-metal-admin'
+      liveUrl: 'https://masgas.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/masgas'
     },
   ];
 
@@ -100,8 +100,8 @@ export default function Home() {
       tech: ['React', 'Next.js', 'Tailwind'],
       description: 'A personal portfolio showcasing my skills and projects.',
       image: '/images/portifolio.jpg',
-      liveUrl: 'https://example.com/portfolio',
-      codeUrl: 'https://github.com/username/portfolio'
+      liveUrl: 'https://portfolio-eight-beta-86.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/Portfolio'
     },
     {
       id: 5,

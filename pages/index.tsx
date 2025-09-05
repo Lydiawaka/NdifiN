@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Image from "next/image";
 import Projects from "./components/Projects/Page";
-
+import Head from "next/head";
 
 const Index = () => {
 
@@ -36,6 +36,15 @@ const Index = () => {
   };
 
   return (
+    <>
+    <Head>
+       <title>NdifiN | Software Development & Consultancy</title>
+        <meta
+          name="google-site-verification"
+          content="googlea5cfac247083116d.html"
+        />
+      </Head>
+      
     <div className="bg-black">
       
       {/* Navigation */}
@@ -115,6 +124,7 @@ const Index = () => {
 
 
     </div>
+   </>
   )
 }
 export default Index
