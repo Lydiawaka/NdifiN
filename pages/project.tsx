@@ -12,33 +12,6 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: 'Precious Metal Informative Website',
-      tech: ['React', 'Next.js', 'Tailwind'],
-      description: 'A personal portfolio showcasing my skills and projects.',
-      image: '/images/metlp.JPG',
-      liveUrl: 'https://precious-metal',
-      codeUrl: 'https://github.com/username/precious-metal'
-    },
-    {
-      id: 2,
-      title: 'E-commerce Store',
-      tech: ['Next.js', 'Django', 'Stripe'],
-      description: 'An online store with full shopping cart functionality.',
-      image: '/images/wak.jpg',
-      liveUrl: 'https://example.com/ecommerce',
-      codeUrl: 'https://github.com/username/ecommerce-store'
-    },
-    {
-      id: 3,
-      title: 'Ecommerce Admin Dashboard',
-      tech: ['Next.js', 'Node.js', 'MySQL'],
-      description: 'A full-stack blog with admin dashboard and markdown support.',
-      image: '/images/admin.jpg',
-      liveUrl: 'https://example.com/admin-dashboard',
-      codeUrl: 'https://github.com/username/admin-dashboard'
-    },
-    {
-      id: 4,
       title: 'Solar Platform',
       tech: ['React', 'Node.js', 'MongoDB'],
       description: 'An informative website for a solar consultancy company.',
@@ -47,7 +20,16 @@ export default function Home() {
       codeUrl: 'https://github.com/username/solar-platform'
     },
     {
-      id: 5,
+      id: 2,
+      title: 'E-commerce Store',
+      tech: ['Next.js', 'Django', 'Stripe'],
+      description: 'An online store with full shopping cart functionality.',
+      image: '/images/wak.jpg',
+      liveUrl: 'https://www.wakawears.com/',
+      codeUrl: 'https://github.com/username/ecommerce-store'
+    },
+    {
+      id: 3,
       title: 'Masgas Enterprice Website',
       tech: ['React', 'Next.js', 'Tailwind'],
       description: 'Ecommerce website that allow clients to order via Whatsapp.',
@@ -56,7 +38,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/masgas-enterprice'
     },
     {
-      id: 6,
+      id: 4,
       title: 'Masgas Dashboard Website',
       tech: ['React', 'Next.js', 'Tailwind', 'PostgreSQL', ],
       description: 'Allows the admins to upload the products to main website.',
@@ -179,13 +161,13 @@ export default function Home() {
       </section>
 
       {/* Clients Projects Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Clients Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold mb-12 text-center text-white border border-teal-500 p-4 rounded-lg w-72 mx-auto hover:border-white">Clients Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {/* Project Cards */}
             {projects.map((project) => (
-              <div key={project.id} className="border rounded-lg overflow-hidden shadow-md">
+              <div key={project.id} className="border rounded-lg overflow-hidden shadow-md bg-white">
                 <div className="h-48 bg-gray-200 relative">
                   <Image
                     src={project.image}
@@ -212,14 +194,6 @@ export default function Home() {
                       <ExternalLink size={16} />
                       Live Preview
                     </Link>
-                    <Link 
-                      href={project.codeUrl} 
-                      target="_blank"
-                      className="flex-1 bg-gray-200 hover:ring-2 hover:ring-gray-900 text-gray-900 text-center py-2 px-4 rounded-md transition-colors font-medium flex items-center justify-center gap-2"
-                    >
-                      <Github size={16} />
-                      View Code
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -229,9 +203,9 @@ export default function Home() {
       </section>
 
       {/* Personal Projects Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-black">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">Personal Projects</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center text-white border border-teal-500 p-4 rounded-lg w-72 mx-auto hover:border-white">Personal Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {personalProjects.map((project) => (
                 <div key={project.id} className="border rounded-lg overflow-hidden shadow-md bg-white">

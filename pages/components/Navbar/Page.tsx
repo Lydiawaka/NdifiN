@@ -52,7 +52,7 @@ const Navbar = () => {
         md:shadow-none
       `}>
          <div className="flex space-x-4">
-            <Link href="https://medium.com/@ndifin77" className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Blog</Link>
+            <Link href="/blogs" className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Blog</Link>
             <button onClick={handleEmailClick} className="flex bg-slate-50 rounded-full py-1 px-3 hover:bg-teal-500">Contact Us</button>
             <Link href="/project" className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Projects</Link>
 
