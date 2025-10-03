@@ -51,12 +51,12 @@ export default function Home() {
   const personalProjects = [
     {
       id: 1,
-      title: 'Crypto Tracker',
-      tech: ['Next.js', 'Docusaurus', 'Shadcn ui'],
-      description: 'A real-time cryptocurrency tracking dashboard displaying price charts, market trends, and coin data using CoinGecko API.',
-      image: '/images/crypto.jpg',
-      liveUrl: 'https://crypto-tracker-gilt-one.vercel.app/',
-      codeUrl: 'https://github.com/Lydiawaka/crypto-tracker'
+      title: 'Recipe Finder',
+      tech: ['Next.js', 'Tailwind CSS', 'Spoonacular API'],
+      description: 'Search and filter recipes by ingredients, dietary restrictions, and more.',
+      image: '/images/recipe-finder.jpg',
+      liveUrl: 'https://recipe-finder-one-sepia.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/recipe-finder'
     },    
     {
       id: 2,
@@ -69,12 +69,12 @@ export default function Home() {
     },
     {
       id: 3,
-      title: 'Recipe Finder',
-      tech: ['Next.js', 'Tailwind CSS', 'Spoonacular API'],
-      description: 'Search and filter recipes by ingredients, dietary restrictions, and more.',
-      image: '/images/recipe.jpg',
-      liveUrl: 'https://example.com/recipes',
-      codeUrl: 'https://github.com/username/recipe-finder'
+      title: 'Crypto Tracker',
+      tech: ['Next.js', 'Docusaurus', 'Shadcn ui'],
+      description: 'A real-time cryptocurrency tracking dashboard displaying price charts, market trends, and coin data using CoinGecko API.',
+      image: '/images/crypto.jpg',
+      liveUrl: 'https://crypto-tracker-gilt-one.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/crypto-tracker'
     },
     {
       id: 4,

@@ -30,7 +30,7 @@ const internalBlogs = [
     readTime: "7 min read",
     category: "Design",
     image: "/images/icon.jpeg",
-    slug: "ui-ux-design-principles",
+    slug: "react-best-practices",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const internalBlogs = [
     readTime: "10 min read",
     category: "Development",
     image: "/images/javascript.jpeg",
-    slug: "scalable-javascript-applications",
+    slug: "typescript-advanced-features",
   },
     
 ]
