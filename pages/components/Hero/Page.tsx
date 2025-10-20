@@ -11,7 +11,7 @@ const Hero = () => {
 
   const handleResumeDownload = () => {
     
-    window.open("/Lydia_Nduati_CV.pdf", "_blank");
+    window.open("/LydiaNduatiResume.pdf", "_blank");
   };
 
   return (
