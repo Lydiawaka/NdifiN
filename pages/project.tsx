@@ -9,45 +9,6 @@ import { ExternalLink, Github } from "lucide-react";
 export default function Home() {
   
 
-  const projects = [
-    {
-      id: 1,
-      title: 'Solar Platform',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      description: 'An informative website for a solar consultancy company.',
-      image: '/images/solarfirm.jpg',
-      liveUrl: 'https://jimaliventuresconsulting.co.ke/',
-      codeUrl: 'https://github.com/username/solar-platform'
-    },
-    {
-      id: 2,
-      title: 'E-commerce Store',
-      tech: ['Next.js', 'Django', 'Stripe'],
-      description: 'An online store with full shopping cart functionality.',
-      image: '/images/wak.jpg',
-      liveUrl: 'https://www.wakawears.com/',
-      codeUrl: 'https://github.com/username/ecommerce-store'
-    },
-    {
-      id: 3,
-      title: 'Masgas Enterprice Website',
-      tech: ['React', 'Next.js', 'Tailwind'],
-      description: 'Ecommerce website that allow clients to order via Whatsapp.',
-      image: '/images/masgas.PNG',
-      liveUrl: 'https://masgas-enterprice.vercel.app/',
-      codeUrl: 'https://github.com/Lydiawaka/masgas-enterprice'
-    },
-    {
-      id: 4,
-      title: 'Masgas Dashboard Website',
-      tech: ['React', 'Next.js', 'Tailwind', 'PostgreSQL', ],
-      description: 'Allows the admins to upload the products to main website.',
-      image: '/images/masgas-admin.PNG',
-      liveUrl: 'https://masgas.vercel.app/',
-      codeUrl: 'https://github.com/Lydiawaka/masgas'
-    },
-  ];
-
   const personalProjects = [
     {
       id: 1,
@@ -76,8 +37,35 @@ export default function Home() {
       liveUrl: 'https://crypto-tracker-gilt-one.vercel.app/',
       codeUrl: 'https://github.com/Lydiawaka/crypto-tracker'
     },
-    {
+        {
       id: 4,
+      title: 'E-commerce Store',
+      tech: ['Next.js', 'Django', 'Stripe'],
+      description: 'An online store with full shopping cart functionality.',
+      image: '/images/wak.jpg',
+      liveUrl: 'https://www.wakawears.com/',
+      codeUrl: 'https://github.com/username/ecommerce-store'
+    },
+    {
+      id: 5,
+      title: 'Masgas Enterprice Website',
+      tech: ['React', 'Next.js', 'Tailwind'],
+      description: 'Ecommerce website that allow clients to order via Whatsapp.',
+      image: '/images/masgas.PNG',
+      liveUrl: 'https://masgas-enterprice.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/masgas-enterprice'
+    },
+    {
+      id: 6,
+      title: 'Masgas Dashboard Website',
+      tech: ['React', 'Next.js', 'Tailwind', 'PostgreSQL', ],
+      description: 'Allows the admins to upload the products to main website.',
+      image: '/images/masgas-admin.PNG',
+      liveUrl: 'https://masgas.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/masgas'
+    },
+    {
+      id: 7,
       title: 'Portfolio Website',
       tech: ['React', 'Next.js', 'Tailwind'],
       description: 'A personal portfolio showcasing my skills and projects.',
@@ -86,7 +74,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/Portfolio'
     },
     {
-      id: 5,
+      id: 8,
       title: 'Our stories',
       tech: ['React', 'Node.js', 'MongoDB'],
       description: 'A full-stack platform where users can sign up and write and save they stories and poems.',
@@ -95,7 +83,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/poems'
     },
     {
-      id: 6,
+      id: 9,
       title: 'Furniture Store',
       tech: ['React', 'Vite', 'Node.js', 'MongoDB'],
       description: 'A modern furniture storefront built with Vite + React.',
@@ -104,7 +92,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/Furniture'
     },
     {
-      id: 7,
+      id: 10,
       title: 'Task Management App',
       tech: ['Next.js', 'Shadcn ui', 'Mysql'],
       description: 'A Trello-inspired task management application with drag-and-drop functionality.',
@@ -113,7 +101,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/Task-Manager'
     },
     {
-      id: 8,
+      id: 11,
       title: 'Restaurant Website',
       tech: ['React', 'Node.js', 'MongoDB'],
       description: 'A full-stack restaurant website with an online booking system for reservations.',
@@ -122,7 +110,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/restaurant'
       },
     {
-      id: 9,
+      id: 12,
       title: 'Udemy Clone',
       tech: ['Typescript','Javascript', 'Shadcn ui'],
       description: 'An online learning platform that enables users to create, manage, and enroll in courses.',
@@ -159,53 +147,10 @@ export default function Home() {
           
         </div>
       </section>
-
-      {/* Clients Projects Section */}
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-white border border-teal-500 p-4 rounded-lg w-72 mx-auto hover:border-white">Clients Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-            {/* Project Cards */}
-            {projects.map((project) => (
-              <div key={project.id} className="border rounded-lg overflow-hidden shadow-md bg-white">
-                <div className="h-48 bg-gray-200 relative">
-                  <Image
-                    src={project.image}
-                    alt={`Project ${project.title}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, index) => (
-                      <span key={index} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">{tech}</span>
-                    ))}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                  <p className="text-gray-600 mb-6">{project.description}</p>
-                  <div className="flex gap-3">
-                    <Link 
-                      href={project.liveUrl} 
-                      target="_blank"
-                      className="flex-1 bg-gray-200 hover:ring-2 hover:ring-teal-600 text-gray-900 text-center py-2 px-4 rounded-md transition-colors font-medium flex items-center justify-center gap-2"
-                    >
-                      <ExternalLink size={16} />
-                      Live Preview
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Personal Projects Section */}
+      {/* Projects Section */}
         <section className="py-20 bg-black">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center text-white border border-teal-500 p-4 rounded-lg w-72 mx-auto hover:border-white">Personal Projects</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center text-white border border-teal-500 p-4 rounded-lg w-72 mx-auto hover:border-white">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {personalProjects.map((project) => (
                 <div key={project.id} className="border rounded-lg overflow-hidden shadow-md bg-white">

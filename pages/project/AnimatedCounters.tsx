@@ -2,24 +2,24 @@ import { useState, useEffect, FC } from 'react';
 
 interface CountState {
   totalProjects: number;
-  clientProjects: number;
-  personalProjects: number;
+  teamProjects: number;
+  aiProjects: number;
   frameworks: number;
 }
 
 const AnimatedCounters: FC = () => {
   const [counts, setCounts] = useState<CountState>({
     totalProjects: 0,
-    clientProjects: 0,
-    personalProjects: 0,
+    teamProjects: 0,
+    aiProjects: 0,
     frameworks: 0
   });
   
   const targetCounts: CountState = {
-    totalProjects: 13,
-    clientProjects: 4,
-    personalProjects: 9,
-    frameworks: 6
+    totalProjects: 12,
+    teamProjects: 3,
+    aiProjects: 2,
+    frameworks: 7
   };
   
   const duration = 2000; 
@@ -37,8 +37,8 @@ const AnimatedCounters: FC = () => {
       
       setCounts({
         totalProjects: Math.floor(progress * targetCounts.totalProjects),
-        clientProjects: Math.floor(progress * targetCounts.clientProjects),
-        personalProjects: Math.floor(progress * targetCounts.personalProjects),
+        teamProjects: Math.floor(progress * targetCounts.teamProjects),
+        aiProjects: Math.floor(progress * targetCounts.aiProjects),
         frameworks: Math.floor(progress * targetCounts.frameworks)
       });
       
@@ -67,12 +67,12 @@ const AnimatedCounters: FC = () => {
         <span className="text-gray-400 mt-2">Total Projects</span>
       </div>
       <div className="flex flex-col items-center">
-        <span className="text-4xl md:text-5xl font-bold">{counts.clientProjects}</span>
-        <span className="text-gray-400 mt-2">Client Projects</span>
+        <span className="text-4xl md:text-5xl font-bold">{counts.teamProjects}</span>
+        <span className="text-gray-400 mt-2">Team Projects</span>
       </div>
       <div className="flex flex-col items-center">
-        <span className="text-4xl md:text-5xl font-bold">{counts.personalProjects}</span>
-        <span className="text-gray-400 mt-2">Personal Projects</span>
+        <span className="text-4xl md:text-5xl font-bold">{counts.aiProjects}</span>
+        <span className="text-gray-400 mt-2">Ai Projects</span>
       </div>
       <div className="flex flex-col items-center">
         <span className="text-4xl md:text-5xl font-bold">{counts.frameworks}</span>
