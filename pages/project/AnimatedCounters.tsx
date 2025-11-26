@@ -16,8 +16,8 @@ const AnimatedCounters: FC = () => {
   });
   
   const targetCounts: CountState = {
-    totalProjects: 12,
-    teamProjects: 3,
+    totalProjects: 15,
+    teamProjects: 4,
     aiProjects: 2,
     frameworks: 7
   };

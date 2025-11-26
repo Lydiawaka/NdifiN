@@ -18,16 +18,16 @@ export default function Home() {
       image: '/images/recipe-finder.jpg',
       liveUrl: 'https://recipe-finder-one-sepia.vercel.app/',
       codeUrl: 'https://github.com/Lydiawaka/recipe-finder'
-    },    
+    },  
     {
       id: 2,
-      title: 'Blog Platform',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      description: 'A full-stack blog with admin dashboard and markdown support.',
-      image: '/images/blog.jpg',
-      liveUrl: 'https://essie-blogs.vercel.app/',
-      codeUrl: 'https://github.com/Lydiawaka/Essie-Blogs'
-    },
+      title: 'Lejaflow',
+      tech: ['Next.js', 'Node.js', 'PostgreSQL'],
+      description: 'Smart Ledger Dashboard for Businesses.',
+      image: '/images/leja.jpg',
+      liveUrl: 'https://www.lejaflow.com/',
+      codeUrl: 'https://github.com/Lydiawaka/Lejaflow'
+    }, 
     {
       id: 3,
       title: 'Crypto Tracker',
@@ -39,12 +39,12 @@ export default function Home() {
     },
         {
       id: 4,
-      title: 'E-commerce Store',
-      tech: ['Next.js', 'Django', 'Stripe'],
-      description: 'An online store with full shopping cart functionality.',
-      image: '/images/wak.jpg',
-      liveUrl: 'https://www.wakawears.com/',
-      codeUrl: 'https://github.com/username/ecommerce-store'
+      title: 'MarketLyse',
+      tech: ['Next.js', 'Django', 'Typescript'],
+      description: 'A Web App for insights and analysis on investment.',
+      image: '/images/market.jpg',
+      liveUrl: 'https://marketlyse.vercel.app/market',
+      codeUrl: 'https://github.com/Lydiawaka/marketlyse'
     },
     {
       id: 5,
@@ -66,6 +66,24 @@ export default function Home() {
     },
     {
       id: 7,
+      title: 'MarketingLyze',
+      tech: ['Typescript','Javascript', 'Tailwind CSS'],
+      description: 'A marketing platform that tracks campaign performance, finds email, and conversion insights using automated data analysis.',
+      image: '/images/marketing.jpg',
+      liveUrl: 'https://marketinglyze.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/marketinglyze'
+    },
+        {
+      id: 8,
+      title: 'E-commerce Store',
+      tech: ['Next.js', 'Django', 'Stripe'],
+      description: 'An online store with full shopping cart functionality.',
+      image: '/images/wak.jpg',
+      liveUrl: 'https://www.wakawears.com/',
+      codeUrl: 'https://github.com/username/ecommerce-store'
+    },
+    {
+      id: 9,
       title: 'Portfolio Website',
       tech: ['React', 'Next.js', 'Tailwind'],
       description: 'A personal portfolio showcasing my skills and projects.',
@@ -74,7 +92,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/Portfolio'
     },
     {
-      id: 8,
+      id: 10,
       title: 'Our stories',
       tech: ['React', 'Node.js', 'MongoDB'],
       description: 'A full-stack platform where users can sign up and write and save they stories and poems.',
@@ -83,7 +101,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/poems'
     },
     {
-      id: 9,
+      id: 11,
       title: 'Furniture Store',
       tech: ['React', 'Vite', 'Node.js', 'MongoDB'],
       description: 'A modern furniture storefront built with Vite + React.',
@@ -92,7 +110,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/Furniture'
     },
     {
-      id: 10,
+      id: 12,
       title: 'Task Management App',
       tech: ['Next.js', 'Shadcn ui', 'Mysql'],
       description: 'A Trello-inspired task management application with drag-and-drop functionality.',
@@ -101,7 +119,7 @@ export default function Home() {
       codeUrl: 'https://github.com/Lydiawaka/Task-Manager'
     },
     {
-      id: 11,
+      id: 13,
       title: 'Restaurant Website',
       tech: ['React', 'Node.js', 'MongoDB'],
       description: 'A full-stack restaurant website with an online booking system for reservations.',
@@ -109,15 +127,25 @@ export default function Home() {
       liveUrl: 'https://restaurant-dusky-six.vercel.app/',
       codeUrl: 'https://github.com/Lydiawaka/restaurant'
       },
+      {
+      id: 14,
+      title: 'Blog Platform',
+      tech: ['React', 'Node.js', 'MongoDB'],
+      description: 'A full-stack blog with admin dashboard and markdown support.',
+      image: '/images/blog.jpg',
+      liveUrl: 'https://essie-blogs.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/Essie-Blogs'
+    },
     {
-      id: 12,
-      title: 'Udemy Clone',
+      id: 15,
+      title: 'Medical Clinic Website',
       tech: ['Typescript','Javascript', 'Shadcn ui'],
-      description: 'An online learning platform that enables users to create, manage, and enroll in courses.',
-      image: '/images/udemy.jpg',
-      liveUrl: 'https://udemy-clone-eight-olive.vercel.app/',
-      codeUrl: 'https://github.com/Lydiawaka/UdemyClone'
-    }
+      description: 'A medical centre website that enables users to  book appointments, and access professional medical care.',
+      image: '/images/medical.jpg',
+      liveUrl: 'https://eclasa-medical-clinic.vercel.app/',
+      codeUrl: 'https://github.com/Lydiawaka/Eclasa-Medical-Clinic'
+    },
+
   ];
   
   return (
