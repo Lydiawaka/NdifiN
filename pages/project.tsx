@@ -233,19 +233,7 @@ export default function Home() {
                 key={project.id} 
                 className="group relative bg-card border border-border rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-teal-900/20 transition-all duration-500 hover:-translate-y-2"
               >
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="px-3 py-1 bg-yellow-600 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
-                    {project.category}
-                  </span>
-                </div>
-
-                {/* view live */}
-                <div className="absolute top-4 right-4 z-10">
-                  <Link href={project.liveUrl} className="px-3 py-1 bg-teal-600 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
-                    View Live
-                  </Link>
-                </div>
+                
                 
                 {/* Project Image */}
                 <div className="relative h-56 overflow-hidden bg-gradient-to-br from-gray-900 to-black">
@@ -285,6 +273,13 @@ export default function Home() {
                   <p className="text-muted-foreground text-sm mb-6 line-clamp-2">
                     {project.description}
                   </p>
+
+                  {/* view live */}
+                  <div className="absolute bottom-4 left-4 z-10">
+                    <Link href={project.liveUrl} className="px-3 py-1 bg-teal-600 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
+                      View Live
+                    </Link>
+                  </div>
                   
                 </div>
                 
