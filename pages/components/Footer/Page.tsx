@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center mt-4">
         <FaCopyright />
-        <h1 className="text-muted-foreground">2026</h1>
+        <h1 className="text-muted-foreground">{new Date().getFullYear()}</h1>
       </div>
     </footer>
     </div>
