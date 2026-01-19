@@ -103,14 +103,14 @@ export default function Blog() {
         />
       </Head>
 
-      <div className="bg-black min-h-screen">
+      <div className="bg-background min-h-screen text-foreground">
         <Navbar />
 
         {/* Hero Section */}
         <section className="pt-24 pb-12 px-8">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Our Blog</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-fade-in-delay">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-fade-in">Our Blog</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-delay">
               Insights, tutorials, and thoughts on web development, design, and technology trends
             </p>
           </div>
@@ -120,11 +120,11 @@ export default function Blog() {
         <section className="pb-8 px-8">
           <div className="max-w-7xl mx-auto">
             <div className="flex justify-center mb-8">
-              <div className="bg-gray-900 rounded-lg p-1 animate-fade-in-up">
+              <div className="bg-secondary/50 rounded-lg p-1 animate-fade-in-up">
                 <button
                   onClick={() => setActiveTab("internal")}
                   className={`px-6 py-3 rounded-md font-medium transition-all ${
-                    activeTab === "internal" ? "bg-teal-500 text-white" : "text-gray-300 hover:text-white"
+                    activeTab === "internal" ? "bg-teal-500 text-white" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   Our Articles
@@ -132,7 +132,7 @@ export default function Blog() {
                 <button
                   onClick={() => setActiveTab("medium")}
                   className={`px-6 py-3 rounded-md font-medium transition-all ${
-                    activeTab === "medium" ? "bg-teal-500 text-white" : "text-gray-300 hover:text-white"
+                    activeTab === "medium" ? "bg-teal-500 text-white" : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   Medium Posts
@@ -149,7 +149,7 @@ export default function Blog() {
               {currentBlogs.map((blog, index) => (
                 <article
                   key={blog.id}
-                  className="bg-gray-900 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 animate-fade-in-up"
+                  className="bg-card border border-border rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="aspect-video overflow-hidden">
@@ -166,14 +166,14 @@ export default function Blog() {
                         <span className="text-gray-400 text-xs">{(blog as any).platform}</span>
                       )}
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">{blog.title}</h3>
-                    <p className="text-gray-300 mb-4 line-clamp-3">{blog.excerpt}</p>
-                    <div className="flex items-center justify-between text-sm text-gray-400 mb-4">
+                    <h3 className="text-xl font-bold text-card-foreground mb-3 line-clamp-2">{blog.title}</h3>
+                    <p className="text-muted-foreground mb-4 line-clamp-3">{blog.excerpt}</p>
+                    <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                       <span>{blog.author}</span>
                       <span>{blog.readTime}</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-500 text-sm">{blog.date}</span>
+                      <span className="text-muted-foreground text-sm">{blog.date}</span>
                       {activeTab === "internal" && "slug" in blog ? (
                         <Link href={`/blog/${blog.slug}`}>
                            <button className="text-teal-500 hover:text-teal-400 font-medium">Read More →</button>
@@ -197,17 +197,17 @@ export default function Blog() {
         </section>
 
         {/* Newsletter Section */}
-        <section className="py-16 px-8 bg-gray-900">
+        <section className="py-16 px-8 bg-card border-t border-border">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-white mb-4 animate-fade-in">Stay Updated</h2>
-            <p className="text-gray-300 mb-8 animate-fade-in-delay">
+            <h2 className="text-3xl font-bold text-foreground mb-4 animate-fade-in">Stay Updated</h2>
+            <p className="text-muted-foreground mb-8 animate-fade-in-delay">
               Subscribe to our newsletter for the latest insights on web development and technology
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto animate-fade-in-up">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-teal-500 focus:outline-none"
+                className="flex-1 px-4 py-3 rounded-lg bg-background text-foreground border border-input focus:border-teal-500 focus:outline-none"
               />
               <button className="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition-colors font-medium">
                 Subscribe

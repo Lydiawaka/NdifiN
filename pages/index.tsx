@@ -1,4 +1,4 @@
-import { FaSearch, FaPalette, FaCode, FaMoneyCheckAlt } from "react-icons/fa";
+import { FaSearch, FaPalette, FaCode, FaBug } from "react-icons/fa";
 import Hero from "./components/Hero/Page";
 import Navbar from "./components/Navbar/Page";
 import About from "./components/About/Page";
@@ -27,7 +27,10 @@ const Index = () => {
     { icon: FaSearch, title: 'UI/UX Design', description: 'Where imagination meets functionality: crafting next-generation interfaces that push creative boundaries while maintaining intuitive usability.', aosDelay: "200" },
     { icon: FaPalette, title: 'SEO/SEM', description: 'Optimize your online presence and reach more customers effectively', aosDelay: "400" },
     { icon: FaCode, title: 'Web Development', description: 'Building the digital foundation of your success through expert web development.', aosDelay: "600" },
-    { icon: FaMoneyCheckAlt, title: 'Financial Consultancy', description: 'Our consultants gives strategic investment guidance that takes a personalized approach to building and preserving wealth.', aosDelay: "800" }
+    { icon: FaBug, 
+    title: 'Software Testing', 
+    description: 'Ensure your applications are bug-free, reliable, and perform optimally.', 
+    aosDelay: "800" }
   ];
 
 
@@ -42,7 +45,7 @@ const Index = () => {
        <meta name="google-site-verification" content="aZ2EgSdJ42Mq5hcC1VE9wH1iSiJoKmlAG_wyIgpo2J4" />
       </Head>
       
-    <div className="bg-black">
+    <div className="bg-background min-h-screen transition-colors duration-300">
       
       {/* Navigation */}
       <Navbar />
@@ -54,11 +57,11 @@ const Index = () => {
         <div className="container max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-12 items-center">
           <div className="lg:col-span-2 ">
             <h2  data-aos="fade-up"
-            className="text-3xl font-bold mb-6 text-white">NdifiN</h2>
-            <p data-aos="fade-up" className="text-gray-200  max-w-xl mb-8">
+            className="text-3xl font-bold mb-6 text-foreground">NdifiN</h2>
+            <p data-aos="fade-up" className="text-muted-foreground  max-w-xl mb-8">
               We are passionate about turning ideas into impactful online experiences. At NdifiN, we specialize in creating and developing websites that combine innovative design, seamless functionality, and user-focused experiences.
             </p>
-            <button onClick={handleEmailClick} className="bg-teal-500 text-white font-semibold px-6 py-2 rounded-lg hover:text-black hover:bg-slate-50 ">
+            <button onClick={handleEmailClick} className="bg-teal-500 text-primary-foreground font-semibold px-6 py-2 rounded-lg hover:text-black hover:bg-slate-50 ">
               Connect
             </button>
           </div>
@@ -78,6 +81,7 @@ const Index = () => {
       <About/>
       {/* project section */}
       <Projects />
+       
        {/* Services Section */}
        <section className="py-20 px-8">
         <div className="max-w-7xl mx-auto">
@@ -95,12 +99,12 @@ const Index = () => {
               >
                 <div className="w-12 h-12 mb-4">
                   {/* Icon placeholder */}
-                  <div className="w-full h-full rounded-full">
+                  <div className="w-full h-full text-gray-900 rounded-full">
                     <service.icon className="text-xl hover:rotate-90" />
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className={index === 2 ? 'text-blue-100' : 'text-gray-600'}>
+                <h3 className="text-xl text-gray-900 font-semibold mb-3">{service.title}</h3>
+                <p className={index === 2 ? 'text-gray-100' : 'text-gray-700'}>
                   {service.description}
                 </p>
                 
@@ -113,13 +117,9 @@ const Index = () => {
       {/* Explore Section */}
       <Explore />
 
-
-
       {/* Footer */}
       <Footer />
       
-
-
     </div>
    </>
   )

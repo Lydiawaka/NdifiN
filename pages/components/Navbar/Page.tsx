@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import Link from 'next/link';
 
+
 const Navbar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
         md:relative 
         z-50 
         right-0 
-        bg-black 
+        bg-background border md:border-none 
         md:bg-transparent 
         p-4 
         md:p-0 
@@ -51,10 +52,10 @@ const Navbar = () => {
         shadow-lg 
         md:shadow-none
       `}>
-         <div className="flex space-x-4">
-            <Link href="/blogs" className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Blog</Link>
-            <button onClick={handleEmailClick} className="flex bg-slate-50 rounded-full py-1 px-3 hover:bg-teal-500">Contact Us</button>
-            <Link href="/project" className="flex bg-teal-500 rounded-full py-1 px-3 hover:bg-slate-50">Projects</Link>
+         <div className="flex space-x-4 md:items-center lg:text-xl">
+            <Link href="/blogs" className="flex bg-teal-500 text-white rounded-full py-1 px-3 hover:bg-slate-50 hover:text-black transition-colors">Blog</Link>
+            <button onClick={handleEmailClick} className="flex bg-white text-teal-500 rounded-full py-1 px-3 hover:bg-teal-500 hover:text-white transition-colors">Contact Us</button>
+            <Link href="/project" className="flex bg-teal-500 text-white rounded-full py-1 px-3 hover:bg-slate-50 hover:text-black transition-colors">Projects</Link>
 
           </div>
       </div>
