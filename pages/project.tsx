@@ -182,7 +182,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-background to-secondary/20 text-foreground py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-foreground to-teal-500 bg-clip-text text-transparent">
-            Web Development Projects
+            Software Development Projects
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-8 text-teal-400">
             Powered by Modern Technologies
@@ -193,7 +193,7 @@ export default function Home() {
 
           <Link
             href="/"
-            className="inline-flex items-center bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20"
+            className="inline-flex items-center bg-teal-500 hover:bg-teal-700 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-teal-500/20"
           >
             Get in Touch
           </Link>
