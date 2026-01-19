@@ -53,13 +53,12 @@ const Navbar = () => {
         md:shadow-none
       `}>
          <div className="flex space-x-4 md:items-center lg:text-xl">
-            <Link href="/blogs" className="flex bg-teal-500 text-white rounded-full py-1 px-3 hover:bg-slate-50 hover:text-black transition-colors">Blog</Link>
-            <button onClick={handleEmailClick} className="flex bg-white text-teal-500 rounded-full py-1 px-3 hover:bg-teal-500 hover:text-white transition-colors">Contact Us</button>
-            <Link href="/project" className="flex bg-teal-500 text-white rounded-full py-1 px-3 hover:bg-slate-50 hover:text-black transition-colors">Projects</Link>
+            <Link href="/blogs" className="flex bg-teal-500 text-black rounded-full py-1 px-3 hover:bg-slate-50 hover:text-black transition-colors">Blog</Link>
+            <button onClick={handleEmailClick} className="flex bg-white text-black rounded-full py-1 px-3 hover:bg-teal-500 hover:text-white transition-colors">Contact Us</button>
+            <Link href="/project" className="flex bg-teal-500 text-black rounded-full py-1 px-3 hover:bg-slate-50 hover:text-black transition-colors">Projects</Link>
 
           </div>
-      </div>
-         
+      </div> 
           
         </div>
       </nav>
